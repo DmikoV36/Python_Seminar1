@@ -24,8 +24,10 @@ try:
         print ("Деление на 0!")
     elif operation == "*":
         print (f"Результат {a} {operation} {b} равен {a * b}")
-    elif operation == "mod":
+    elif operation == "mod" and b != 0:
         print (f"Результат {a} {operation} {b} равен {a % b}")
+    elif operation == "mod" and b == 0:
+        print ("Деление на 0!")
     elif operation == "pow":
         print (f"Результат {a} {operation} {b} равен {a ** b}")
     elif operation == "div":
